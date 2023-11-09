@@ -10,9 +10,9 @@ int main(int argc, char *argv[]) {
 	char c;
 	fp = fopen("sample.txt","r");
 	if (fp == NULL)
-	printf("파일을 못열음\n");
-	while ((c=fgetc(fp)) != EOF)
-	putchar(c);
+	{printf("파일을 못열음\n");}
+	while ((c=fgetc(fp)) != EOF)	//한글자 읽은게 마지막이 아니면 
+	{putchar(c);}	//한글자씩 출력 
 	fclose(fp);
 }
 
